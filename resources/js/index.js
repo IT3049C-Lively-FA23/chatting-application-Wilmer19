@@ -47,4 +47,9 @@ async function updateMessages() {
       // get each message
       // format it
       // add it to the chatbox
+  let formattedMessages = "";
+  messages.forEach(message => {
+      formattedMessages += formatMessage(message, nameInput.value);
+  });
+  chatBox.innerHTML = formattedMessages;
 }
