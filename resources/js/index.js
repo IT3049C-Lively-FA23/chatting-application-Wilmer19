@@ -11,3 +11,10 @@ function updateMessages() {
       // format it
       // add it to the chatbox
 }
+
+const serverURL = `https://it3049c-chat.fly.dev/messages`;
+
+function fetchMessages() {
+    return fetch(serverURL)
+        .then( response => response.json())
+}
