@@ -18,6 +18,8 @@ how many points out of 20 do you deserve on this assignment:
 I deserve a 19/20 because all of my tests passed expect one. 
 I'm not sure why the last test says "skipped". I didn't know this could happen. I always thought I test could
 either pass or fail. I double checked the instructions and my code is working fine.
+I also made frequent commits to GitHub, hosted the webpage on Github Pages, the page loads messages from the server
+and sends messages to the server.
 
 ## Self-Reflection:
 <!-- Write your self-reflection under this line -->
