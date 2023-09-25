@@ -7,20 +7,26 @@
 Instructions to this assignment can be found [here](https://reedws.github.io/IT3049C/coursework/labs/chatting-app/).
 - [x] update the assignment checks above to the correct link. - Done Automatically
 ## Checklist:
-- [ ] update the assignment checks above to the correct link
-- [ ] make sure the assignment checks pass
-- [ ] fill out the self evaluation and Reflection
-- [ ] submit the repository link on Canvas
+- [X] update the assignment checks above to the correct link
+- [X] make sure the assignment checks pass
+- [X] fill out the self evaluation and Reflection
+- [X] submit the repository link on Canvas
 
 ## Self-Evaluation:
 
 how many points out of 20 do you deserve on this assignment: 
+I deserve a 19/20 because all of my tests passed expect one. 
+I'm not sure why the last test says "skipped". I didn't know this could happen. I always thought I test could
+either pass or fail. I double checked the instructions and my code is working fine.
 
 ## Self-Reflection:
 <!-- Write your self-reflection under this line -->
+I really enjoyed this assignment because I learned how to make a chatting application. It was really
+helpful having the emojis help guide me. 
 
 ### How long it took me to finish this?
-
+One hour 
 
 ## Discussion Questions:
 1. What does the bootstrap `display-4` class do?
+It's used to create a large heading for the element.
