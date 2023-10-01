@@ -4,6 +4,7 @@ const myMessage = document.getElementById("my-message");
 const sendButton = document.getElementById("send-button");
 const chatBox = document.getElementById("chat");
 const saveButton = document.getElementById("save-username-button");
+const switchButton = document.getElementById("switch-button");
 
 const serverURL = `https://it3049c-chat.fly.dev/messages`;
 
@@ -101,3 +102,9 @@ console.log(localStorage.getItem('userData'));
 
 usernameInput.innerHTML = localData.userName;
 
+//dark mode function
+switchButton.addEventListener("click", function(switchButtonClickEvent){
+switchButtonClickEvent.preventDefault();
+    let element = document.body;
+    element.classList.toggle("dark");
+});
