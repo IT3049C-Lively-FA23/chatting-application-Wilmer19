@@ -3,8 +3,10 @@ const nameInput = document.getElementById("my-name-input");
 const myMessage = document.getElementById("my-message");
 const sendButton = document.getElementById("send-button");
 const chatBox = document.getElementById("chat");
+const saveButton = document.getElementById("save-username-button");
 
 const serverURL = `https://it3049c-chat.fly.dev/messages`;
+
 
 function fetchMessages() {
     return fetch(serverURL)
@@ -82,3 +84,4 @@ sendButton.addEventListener("click", function(sendButtonClickEvent) {
   sendMessages(sender,message);
   myMessage.value = "";
 });
+
