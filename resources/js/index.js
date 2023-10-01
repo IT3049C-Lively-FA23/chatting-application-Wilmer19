@@ -85,3 +85,19 @@ sendButton.addEventListener("click", function(sendButtonClickEvent) {
   myMessage.value = "";
 });
 
+var usernameInput = document.getElementById("my-name-input"),
+userData = {
+    userName: 'Billy Bob',
+    userDescription: 'Another user'
+},
+localData;
+
+localStorage.setItem('userData', JSON.stringify(userData));
+
+localData = JSON.parse(localStorage.getItem('userData'));
+
+console.log(localData);
+console.log(localStorage.getItem('userData'));
+
+usernameInput.innerHTML = localData.userName;
+
