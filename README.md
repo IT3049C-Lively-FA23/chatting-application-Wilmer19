@@ -14,20 +14,19 @@ Instructions to this assignment can be found [here](https://reedws.github.io/IT3
 
 ## Self-Evaluation:
 
-how many points out of 20 do you deserve on this assignment: 
-I deserve a 19/20 because all of my tests passed expect one. 
-I'm not sure why the last test says "skipped". I didn't know this could happen. I always thought I test could
-either pass or fail. I double checked the instructions and my code is working fine.
-I also made frequent commits to GitHub, hosted the webpage on Github Pages, the page loads messages from the server
-and sends messages to the server.
+how many points out of 10 do you deserve on this assignment: 
+I deserve a 12/10 because my user's name is saved to local storage and user's name is retrieved from local storage on page load. 
+I also attempted the extra credit. I created a "switch color mode" button that switches the body text from white to black. I tried
+to change the rest of the app to black but I was having trouble with the css styling.
 
 ## Self-Reflection:
 <!-- Write your self-reflection under this line -->
-I really enjoyed this assignment because I learned how to make a chatting application. It was really
-helpful having the emojis help guide me. 
+This assignment was challenging because there wasn't an example to look at. I tried my best to use the lecture videos to 
+help guide me and figure out the homework. I also went to the IT learning center for more help. The TA was really helpful and 
+I got a better understanding.
 
 ### How long it took me to finish this?
-One hour 
+Two hours
 
 ## Discussion Questions:
 1. What does the bootstrap `display-4` class do?
