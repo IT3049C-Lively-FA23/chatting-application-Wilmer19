@@ -1,4 +1,7 @@
-//References to the HTML elements
+document.getElementById("my-name-input").value = JSON.parse(localStorage.getItem('userData')); 
+document.getElementById("send-button").disabled = true;
+document.getElementById("my-message").disabled = true;
+
 const nameInput = document.getElementById("my-name-input");
 const myMessage = document.getElementById("my-message");
 const sendButton = document.getElementById("send-button");
@@ -86,21 +89,38 @@ sendButton.addEventListener("click", function(sendButtonClickEvent) {
   myMessage.value = "";
 });
 
-var usernameInput = document.getElementById("my-name-input"),
-userData = {
-    userName: 'Billy Bob',
-    userDescription: 'Another user'
-},
-localData;
+saveButton.addEventListener("click", function(saveButtonClickEvent){
+//console.log("This is a save button")
+var usernameInput = document.getElementById("my-name-input").value,
+ //console.log("Thisa is my name "+usernameInput)
+ //userData = { 
+   // usernameInput
+  //  userName: usernameInput,
+    //userDescription: 'Another user'
+//}
+usernameInput
+ , localData;
 
-localStorage.setItem('userData', JSON.stringify(userData));
+ localStorage.setItem('userData', JSON.stringify(usernameInput));
 
-localData = JSON.parse(localStorage.getItem('userData'));
+ localData = JSON.parse(localStorage.getItem('userData'));
 
-console.log(localData);
+ console.log(localData);
 console.log(localStorage.getItem('userData'));
 
-usernameInput.innerHTML = localData.userName;
+//usernameInput.innerHTML = localData.userName;
+if(usernameInput != ""){
+document.getElementById("my-message").disabled = false;
+document.getElementById("send-button").disabled = false;
+
+}
+else{
+    alert("Username cannot be empty")
+}
+}
+
+);
+
 
 //dark mode function
 switchButton.addEventListener("click", function(switchButtonClickEvent){
