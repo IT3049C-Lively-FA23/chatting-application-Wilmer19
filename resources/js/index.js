@@ -90,14 +90,7 @@ sendButton.addEventListener("click", function(sendButtonClickEvent) {
 });
 
 saveButton.addEventListener("click", function(saveButtonClickEvent){
-//console.log("This is a save button")
 var usernameInput = document.getElementById("my-name-input").value,
- //console.log("Thisa is my name "+usernameInput)
- //userData = { 
-   // usernameInput
-  //  userName: usernameInput,
-    //userDescription: 'Another user'
-//}
 usernameInput
  , localData;
 
@@ -105,10 +98,9 @@ usernameInput
 
  localData = JSON.parse(localStorage.getItem('userData'));
 
- console.log(localData);
+console.log(localData);
 console.log(localStorage.getItem('userData'));
 
-//usernameInput.innerHTML = localData.userName;
 if(usernameInput != ""){
 document.getElementById("my-message").disabled = false;
 document.getElementById("send-button").disabled = false;
